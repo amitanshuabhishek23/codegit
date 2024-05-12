@@ -108,4 +108,44 @@ To https://github.com/amitanshuabhishek23/codegit.git
 branch 'feature/mar' set up to track 'origin/feature/mar'.
 amitanshu@Amitanshus-MacBook-Pro codegit % 
 
+
+Series Main : 
+
+amitanshu@Amitanshus-MacBook-Pro Abhishek % git switch feature/mar 
+branch 'feature/mar' set up to track 'origin/feature/mar'.
+Switched to a new branch 'feature/mar'
+amitanshu@Amitanshus-MacBook-Pro Abhishek % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+amitanshu@Amitanshus-MacBook-Pro Abhishek % git merge feature/mar 
+Merge made by the 'ort' strategy.
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+amitanshu@Amitanshus-MacBook-Pro Abhishek % git push orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+amitanshu@Amitanshus-MacBook-Pro Abhishek % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 293 bytes | 293.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amitanshuabhishek23/codegit.git
+   bfacd82..0b7bd38  main -> main
+
+
+amitanshu@Amitanshus-MacBook-Pro codegit % git fetch
+amitanshu@Amitanshus-MacBook-Pro codegit % git pull
+Updating 877fc55..0b7bd38
+Fast-forward
+ README.md  | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ index.html |  1 +
+ 2 files changed, 46 insertions(+)
+amitanshu@Amitanshus-MacBook-Pro codegit % 
+
 ````
